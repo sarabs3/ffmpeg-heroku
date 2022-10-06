@@ -15,7 +15,7 @@ videoNames.forEach(function(videoName){
     mergedVideo = mergedVideo.addInput(videoName);
 });
 
-mergedVideo.mergeToFile('./mergedVideo.mp4', './tmp/')
+mergedVideo.mergeToFile('./public/mergedVideo.mp4', './tmp/')
 .on('error', function(err) {
     console.log('Error ' + err.message);
 })
